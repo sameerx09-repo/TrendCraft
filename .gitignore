@@ -1,0 +1,86 @@
+# Credentials and local configuration
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.netrc
+.claude/
+.codex/
+.aws/
+.vercel/
+
+# Dependencies, build products, and reports
+node_modules/
+.next/
+out/
+output/
+build/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+*.log
+.DS_Store
+Thumbs.db
+
+# Private databases, workspace state, and captured provider results
+.pglite*/
+storage/
+*.db
+*.sqlite*
+*.dump
+*.bak
+productCatalog/
+scratch/
+scratch-*
+web/scripts/*Results.json
+web/scripts/*TaskState.json
+web/scripts/*AttemptState.json
+
+# Local and generated media; provision separately from the source repository
+*.mp4
+*.mov
+*.webm
+*.mp3
+*.wav
+web/public/brand-feed/
+web/public/persona-library/
+web/public/runway-clips/
+web/public/viral-trend-clips/
+web/public/test-assets/
+web/public/glovibe-product.jpg
+
+# Internal planning and account/cost notes
+/fastlane_startup_analysis.md
+/feature_list.md
+/needs_deep_dive.md
+/phase1_phase2_build_tasklist.md
+/trendcraft_implementation_plan.md
+/trendcraft_demo.html
+/web/CLAUDE.md
+/web/Expenditure.md
+/web/HANDOVER_runway_persona_remix.md
+/web/CROSS_NICHE_DISCOVERY.md
+/web/PERSONA_ROSTER_PLAN.md
+/web/personaLibraryPrompts.md
+/web/learningPrompt.md
+
+# Raw captured provider data is provisioned privately, alongside media.
+fixtures/
+
+# Additional credential containers and database backups
+.ssh/
+credentials.json
+credentials.*.json
+service-account*.json
+service_account*.json
+id_rsa
+id_ed25519
+*.sql.gz
+*.sql.zip
+
+# Only audited UI SVGs are source assets in the public directory.
+/web/public/*
+!/web/public/*.svg
